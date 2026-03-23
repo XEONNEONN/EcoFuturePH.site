@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoFuture PH</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #e6f2ff;
+        }
+        header {
+            background: #2e8b57;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            background: #2e8b57;
+            color: white;
+            cursor: pointer;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>EcoFuture PH</h1>
+    <p>Understanding Global Warming</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('aboutGW')">Global Warming</button>
+    <button onclick="showPage('causes')">Causes</button>
+    <button onclick="showPage('effects')">Effects</button>
+    <button onclick="showPage('ph')">PH Impact</button>
+    <button onclick="showPage('solutions')">Solutions</button>
+    <button onclick="showPage('action')">Take Action</button>
+    <button onclick="showPage('about')">About</button>
+</nav>
+
+<section id="home" class="active">
+    <h2>Welcome</h2>
+    <p>Learn about global warming and how we can save our planet.</p>
+</section>
+
+<section id="aboutGW">
+    <h2>What is Global Warming?</h2>
+    <p>Global warming is the increase in Earth's temperature due to greenhouse gases.</p>
+</section>
+
+<section id="causes">
+    <h2>Causes</h2>
+    <ul>
+        <li>Burning fossil fuels</li>
+        <li>Deforestation</li>
+        <li>Industrial pollution</li>
+    </ul>
+</section>
+
+<section id="effects">
+    <h2>Effects</h2>
+    <ul>
+        <li>Rising sea levels</li>
+        <li>Stronger storms</li>
+        <li>Heatwaves</li>
+    </ul>
+</section>
+
+<section id="ph">
+    <h2>Impact in the Philippines</h2>
+    <p>Climate change causes floods, typhoons, and crop damage in the Philippines.</p>
+</section>
+
+<section id="solutions">
+    <h2>Solutions</h2>
+    <ul>
+        <li>Use renewable energy</li>
+        <li>Plant trees</li>
+        <li>Reduce waste</li>
+    </ul>
+</section>
+
+<section id="action">
+    <h2>What You Can Do</h2>
+    <ul>
+        <li>Save electricity</li>
+        <li>Avoid plastic</li>
+        <li>Educate others</li>
+    </ul>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>Created by: Your Name</p>
+    <p>Grade 12 Project</p>
+</section>
+
+<script>
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => section.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
